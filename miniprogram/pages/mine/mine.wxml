@@ -1,0 +1,31 @@
+<view class="myClct">
+  <button class="my-text" bindtap="hideText">收藏的影评 ↓</button> 
+  <view class="my-list {{cltShow?'none':'list-hide'}}" wx:for="{{collections}}" wx:key="clcItem" data-mid="{{item.moiveId}}" bindtap="openDetail" data-reviewId="{{item._id}}">
+    <image class="my-list-img" src="{{item.image}}"></image>
+    <view class="info">
+      <view class="title">{{item.name}}</view>
+      <view class="content">{{item.content}}</view>
+      <view class="user">
+        <image class="avatar" src="{{item.avatar}}"></image>
+        <view class="name">{{item.username}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="myClct">
+ <button class="my-text" bindtap="hideRview">发布的影评 ↓</button>
+  <view class="my-list {{reviewShow?'none':'list-hide'}}" wx:for="{{reviews}}" wx:key="rvsItem" data-id="{{item.id}}" bindtap="openDetail" data-reviewId="{{item._id}}">
+    <image class="my-list-img" src="{{item.image}}"></image>
+    <view class="info">
+      <view class="title">{{item.name}}</view>
+      <view class="content">{{item.content}}</view>
+      <view class="user">
+        <image class="avatar" src="{{item.avatar}}"></image>
+        <view class="name">{{item.username}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<button class="back-back" bindtap="bckToIdx">回到首页</button>

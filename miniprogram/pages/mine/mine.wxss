@@ -1,0 +1,55 @@
+/* pages/mine/mine.wxss */
+.myClct{
+  padding: 5%;
+}
+.my-list{
+  display: flex;
+ 
+  margin: 40rpx auto;
+  height: 320rpx;
+  border: 1px solid #eee;
+  background-color: white;
+}
+.my-list-img{
+    
+    width: 240rpx;
+    height: 320rpx;
+}
+.info{
+  padding-top: 40rpx;
+  padding-left: 40rpx;
+  color:black;
+  font-weight: bold;
+}
+.content{
+  margin: 40rpx auto;
+  color: #222;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.user{
+  display: flex;
+  align-item:center;
+}
+.avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.name{
+  font-size: 0.8em;
+  color:#666;
+  line-height: 3em;
+  padding-left: 10rpx;
+
+  }
+  .my-text{
+    margin: 10rpx auto;
+    text-align: center;
+  }
+  .list-hide{
+    display: none;
+  }
+  .back-back{
+    background-color: greenyellow;
+  }

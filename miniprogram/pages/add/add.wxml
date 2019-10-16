@@ -1,0 +1,22 @@
+<view class="detail">
+<image src="{{movieDetail.image}}"  mode='widthFix' class="avatar"></image>
+  <view class="content">
+    <view class="title">{{movieDetail.name}}</view>
+  
+  </view>
+  <textarea placeholder="请输入你的影评内容" wx:if="{{tapIndex==0}}" bindinput='onInput'></textarea>
+  <button wx:else bindtap="recorder">录音</button>
+  <view class="editPublish {{epDis ? 'disep': ''}}">
+     <button bindtap="reviewDone">重新编辑</button>
+     <button bindtap="addReview" data-tapindex="{{tapIndex}}">发布影评</button>
+  </view>
+</view>
+<view class="log-done">
+  <view wx:if="{{!userInfo}}">
+    <button bindtap="onTapLogin" open-type='getUserInfo' >登录</button>
+  </view>
+  <view wx:else> 
+    <button class="review-button {{!reviewContent ? 'disable' : ''}} {{!epDis ? 'disep': ''}}"  bindtap="reviewDone">完成</button>
+  </view>
+</view>
+

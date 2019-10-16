@@ -1,0 +1,12 @@
+<view class="detail">
+<image src="{{movieDetail.image}}"  mode='widthFix' class="avatar"></image>
+  <view class="content">
+    <view class="title">{{movieDetail.name}}</view>
+    <view class="synopsis">{{movieDetail.synopsis}}</view>
+  </view>
+  <view class="buttons">
+  <button bindtap="review">查看影评</button>
+  <button bindtap="addReview" data-id="movieDetail._id">添加影评</button>
+  </view>
+  
+</view>

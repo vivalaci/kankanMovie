@@ -1,0 +1,30 @@
+.avatar{
+  margin: -100rpx auto 60rpx;
+  width: 50%;
+
+}
+.detail{
+  border: 1px solid #eee;
+  margin: 200rpx 20rpx;
+  background-color: white;
+  text-align: center;
+
+}
+.content{
+  width: 60%;
+  margin: 50rpx auto;
+}
+.title{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8em;
+}
+button{
+  border: 1px solid #eee;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,20 @@
+<view class="detail">
+  <view class="movie">
+    <image src="{{movieDetail.image}}"  mode='widthFix' class="img"></image>
+    <view class="name">{{movieDetail.name}}</view>
+  </view>
+  <view class="content">
+    <view class="info">
+      <image src="{{reviewDetail.avatar}}" class="avatar"></image>
+      <view class="username">{{reviewDetail.username}}的影评</view>
+    </view>
+    <view class="review">
+      <view class="">"</view>
+      <view class="review-content">{{reviewDetail.content}}</view>
+    </view>
+  </view>
+  <view class="buttons">
+    <button bindtap="reviewClct" data-content="{{reviewDetail.content}}" data-avatar="{{reviewDetail.avatar}}" data-username="{{reviewDetail.username}}">收藏影评</button>
+    <button bindtap="addReview" data-id="movieDetail._id">写影评</button>
+  </view>
+</view>

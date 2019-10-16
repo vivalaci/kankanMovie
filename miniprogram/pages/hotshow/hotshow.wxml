@@ -1,0 +1,8 @@
+<navigator class="movie-list" wx:for="{{movieList}}" wx:key="key" url="/pages/detail/detail?id={{item._id}}">
+  <image src="{{item.image}}" class="movie-img" mode='widthFix'></image>
+  <view class="content">
+    <view class="title">{{item.name}}</view>
+    <view class="type">{{item.type}}</view>
+  </view>
+</navigator>
+

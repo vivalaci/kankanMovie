@@ -1,0 +1,13 @@
+
+
+<view wx:if="{{reviewList.length==0}}" class="noReview">
+  <view class="add-text">啊哦，您查看的电影还暂无评论！</view>
+  <button class="addReview" bindtap="addReview">快来添加吧!</button>
+</view>
+<view wx:for="{{!whichUrl?reviewList:userReviews}}" wx:key="key" class="review-list" bindtap="reviewDetail" data-reviewId="{{item._id}}" data-time="{{item.createTime}}">
+  <view class="user-info">
+    <image class="avatar" src="{{item.avatar}}" mode="widthFix"></image>
+    <view class="name">{{item.username}}</view>
+  </view>
+  <view class="content" max="100" >{{item.content}}</view>
+</view>

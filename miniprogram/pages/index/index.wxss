@@ -1,0 +1,49 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.tab-bar{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  border-top:1rpx solid #eee;
+  justify-content: space-around;
+}
+.tab-bar image{
+  width: 30rpx;
+  height: 30rpx;
+ 
+}
+.hot,.mine{
+  display: flex
+}
+.content{
+  text-align: center
+}
+.post-img{
+  margin: 40rpx auto;
+  min-height: 480px;
+}
+.command{
+  margin-top: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.avatar{
+  width: 60rpx;
+  height: 60rpx;
+}
+.users{
+  font-size: 0.9em;
+  color: #555;
+  font-style:italic;
+}

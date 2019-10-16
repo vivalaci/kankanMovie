@@ -1,0 +1,20 @@
+<navigator class="content" url="/pages/detail/detail?id={{movie._id}}">
+  <image class="post-img" src="{{movie.image}}"></image>
+  <view class="title">{{movie.name}}</view>
+  <view class="command" bindtap="useReviews" data-pid="{{user.openid}}" data-movieId="{{movie._id}}" data-url="{{false}}">
+    <image class="avatar" src="{{user.avatar}}"></image>
+    <view class="users">{{user.name}}</view>
+    <view>给你推荐了一部电影</view>
+  </view>
+</navigator>
+
+<view class="tab-bar">
+  <view class="hot" bindtap="openHot">
+    <image src="/images/hotshow.png"></image>
+    <button class="hot-text">热门</button>
+  </view>
+  <view class="mine" bindtap="openMine" data-id="{{user.openid}}">
+    <image src="/images/mine.png"></image>
+    <button class="mine-text" open-type="getUserInfo" bindgetuserinfo="getUserInfoFun">我的</button> 
+  </view>
+</view>
