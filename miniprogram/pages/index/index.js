@@ -88,6 +88,14 @@ Page({
     wx.navigateTo({
       url: '../review/review?id='+movieId+'&openid='+openid +'&wurl=false',
     })
-  }
+  },
+  onPullDownRefresh() {
+    wx.showToast({
+      title: '刷新中....',
+      icon: 'loading'
+    })
+    this.getMovieList()
+    wx.stopPullDownRefresh()
+  }  
 
 })

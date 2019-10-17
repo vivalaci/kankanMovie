@@ -46,10 +46,19 @@
   .my-text{
     margin: 10rpx auto;
     text-align: center;
+    color: white;
+    background-color: green;
   }
   .list-hide{
     display: none;
   }
   .back-back{
     background-color: greenyellow;
+  }
+  .arrow-view{
+    display: inline-flex;
+  }
+  .arrow-turn{
+    transform:rotate(180deg);
+    
   }

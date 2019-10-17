@@ -29,5 +29,13 @@ Page({
       wx.hideLoading()
     })
   },
+  onPullDownRefresh() {
+    wx.showToast({
+      title: '刷新中....',
+      icon: 'loading'
+    })
+    this.getMovieList()
+    wx.stopPullDownRefresh()
+  }  
 
 })

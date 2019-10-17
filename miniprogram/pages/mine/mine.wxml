@@ -1,5 +1,5 @@
 <view class="myClct">
-  <button class="my-text" bindtap="hideText">收藏的影评 ↓</button> 
+  <button class="my-text" bindtap="hideText">收藏的影评 <view class="arrow-view {{cltShow?'none':'arrow-turn'}}">↓</view> </button> 
   <view class="my-list {{cltShow?'none':'list-hide'}}" wx:for="{{collections}}" wx:key="clcItem" data-mid="{{item.moiveId}}" bindtap="openDetail" data-reviewId="{{item._id}}">
     <image class="my-list-img" src="{{item.image}}"></image>
     <view class="info">
@@ -14,7 +14,7 @@
 </view>
 
 <view class="myClct">
- <button class="my-text" bindtap="hideRview">发布的影评 ↓</button>
+ <button class="my-text" bindtap="hideRview">发布的影评 <view class="arrow-view {{reviewShow?'none':'arrow-turn'}}">↓</view></button>
   <view class="my-list {{reviewShow?'none':'list-hide'}}" wx:for="{{reviews}}" wx:key="rvsItem" data-id="{{item.id}}" bindtap="openDetail" data-reviewId="{{item._id}}">
     <image class="my-list-img" src="{{item.image}}"></image>
     <view class="info">
