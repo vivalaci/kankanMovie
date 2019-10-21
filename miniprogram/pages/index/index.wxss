@@ -21,7 +21,8 @@ page {
  
 }
 .hot,.mine{
-  display: flex
+  display: flex;
+  align-items: center;
 }
 .content{
   text-align: center

@@ -96,6 +96,9 @@ Page({
     })
     this.getMovieList()
     wx.stopPullDownRefresh()
+  },
+  getUserInfo(e){
+    console.log(e)
   }  
 
 })
